@@ -1,33 +1,35 @@
 import { Nav, Navbar } from 'react-bootstrap';
 import * as Icons from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
-import React, { useRef, useState } from 'react';
-import { CSSTransition } from 'react-transition-group';
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 
 import './NavBar.css';
 
 function NavBar() {
-    const [open, setOpen] = useState(false);
-    const openRef = useRef(null);
+
+    const hamburgerMenuToggle = () => {
+        if(document.getElementById('my-toggle-links').className == 'openHamburger') {
+            document.getElementById('my-toggle-links').className = 'closeHamburger';
+            setTimeout(() => {document.getElementsByClassName('HamburgerMenu')[0].style.display = 'none';}, 300);
+        }
+        else {
+            document.getElementById('my-toggle-links').className = 'openHamburger';
+            setTimeout(() => {document.getElementsByClassName('HamburgerMenu')[0].style.display = 'block';}, 300);
+        }
+    };
 
     return (
         <>
             <div style={{ position: 'fixed' }}>
                 <div className='ExpandingNav'>
                     <div className='NavBg'>
-                        <Button className='ExpandToggle' onClick={() => setOpen(!open)} aria-controls='toggleLinks' aria-expanded={open}><Icons.List style={{ color: '#FFFFFF', fontSize: '1.875rem' }} /></Button>
+                        <Button className='ExpandToggle' onClick={hamburgerMenuToggle}><Icons.List style={{ color: '#FFFFFF', fontSize: '1.875rem' }} /></Button>
                     </div>
                     <div style={{ width: '100vw', height: '0.0625rem', backgroundColor: '#FFFFFF' }}></div>
-                    
-                    <CSSTransition
-                        in={open}
-                        timeout={300}
-                        unmountOnExit
-                        nodeRef={openRef}
-                        classNames="my-toggle"
-                    >
-                        <div className='my-toggle-links' ref={openRef} style={{ display: 'flex', flexDirection: 'column', width: 'auto', textAlign: 'justify' }}>
+
+                    <div className='HamburgerMenu' style={{ display: 'none' }}>
+                        <div id="my-toggle-links" className='initHamburger' style={{ display: 'flex', flexDirection: 'column', msflexDirection: 'column', WebkitflexDirection: 'column', width: 'auto', textAlign: 'justify' }}>
                             <Link as={Link} to='/' className='ExpandButtons'>Home</Link>
 
                             <Link as={Link} to='/about' className='ExpandButtons'>About</Link>
@@ -38,7 +40,7 @@ function NavBar() {
 
                             <Link as={Link} to='/resume' className='ExpandButtons'>Resume</Link>
                         </div>
-                    </CSSTransition>
+                    </div>
 
                 </div>
                 <div className='FixedNav'>
@@ -46,7 +48,7 @@ function NavBar() {
                         <Navbar.Brand>
                             <Icons.House style={{ color: '#FFFFFF', fontSize: '1.875rem' }} />
                         </Navbar.Brand>
-                        <Nav style={{ width: '100%' }}>
+                        <Nav style={{ width: '100%', display: 'flex' }}>
 
                             <Nav.Link as={Link} to='/' className='NavButton' style={{ marginLeft: '4vw' }}>Home</Nav.Link>
 
@@ -58,8 +60,11 @@ function NavBar() {
 
                             <Nav.Link as={Link} to='/resume' className='NavButton'>Resume</Nav.Link>
 
-                            <button className='GitHubButton'><Icons.Github style={{ width: '1.375rem', height: '1.375rem' }} /></button>
+
                         </Nav>
+
+                        <button className='GitHubButton'><Icons.Github style={{ width: '1.375rem', height: '1.375rem' }} /></button>
+
                     </Navbar>
                 </div>
                 <div style={{ width: '100vw', height: '0.0625rem', backgroundColor: '#FFFFFF' }}></div>

@@ -1,3 +1,23 @@
+@keyframes expandMenu {
+    0% {
+        transform: scaleY(0%);
+    }
+
+    100% {
+        transform: scaleY(100%);
+    }
+}
+
+@keyframes collapseMenu {
+    0% {
+        transform: scaleY(100%);
+    }
+
+    100% {
+        transform: scaleY(0%);
+    }
+}
+
 @media screen and (min-width: 890px) {
     .ExpandingNav {
         display: none;
@@ -22,13 +42,12 @@
         color: #FFFFFF;
         font-size: 1.2rem;
         box-sizing: border-box;
-        width: 6vw;
+        width: 8vw;
         padding: 0;
         text-decoration: none;
         top: 0;
-        margin-left: 3vw;
-        margin-right: 3vw;
         border: none;
+        text-align: center;
     }
 
     .NavButton:hover {
@@ -123,5 +142,33 @@
 
     .ExpandButtons:hover {
         cursor: pointer;
+    }
+
+    .openHamburger {
+        /* max-height: 38vh;
+        transition: max-height 0.3s ease-in; */
+        transform-origin: top center;
+        animation-name: expandMenu;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        -webkit-animation-name: expandMenu;
+        -webkit-animation-duration: 0.3s;
+        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-timing-function: ease-in;
+    }
+
+    .closeHamburger {
+        /* max-height: 0vh;
+        transition: max-height 0.3s ease-out; */
+        transform-origin: top center;
+        animation-name: collapseMenu;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+        -webkit-animation-name: collapseMenu;
+        -webkit-animation-duration: 0.3s;
+        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-timing-function: ease-out;
     }
 }
