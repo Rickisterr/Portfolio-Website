@@ -1,7 +1,14 @@
+.HomeWrapper {
+    overflow-x: hidden;
+}
+
 .ParallaxSection {
-    position: absolute;
+    overflow: hidden;
+    height: 150vh;
+    width: 100%;
+    position: relative;
 }
 
 .ParallaxImg {
-    position: relative;
+    position: absolute;
 }
