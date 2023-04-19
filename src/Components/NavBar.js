@@ -21,7 +21,7 @@ function NavBar() {
 
     return (
         <>
-            <div style={{ position: 'fixed' }}>
+            <div style={{ position: 'fixed', zIndex: '10' }}>
                 <div className='ExpandingNav'>
                     <div className='NavBg'>
                         <Button className='ExpandToggle' onClick={hamburgerMenuToggle}><Icons.List style={{ color: '#FFFFFF', fontSize: '1.875rem' }} /></Button>

@@ -1,14 +1,32 @@
+@keyframes bounceAnim {
+    0% {
+        transform: translateY(0.5rem);
+    }
+    50% {
+        transform: translateY(-0.5rem);
+    }
+    100% {
+        transform: translateY(0.5rem);
+    }
+}
+
 .HomeWrapper {
     overflow-x: hidden;
 }
 
-.ParallaxSection {
+/* .ParallaxSection {
     overflow: hidden;
-    height: 150vh;
     width: 100%;
-    position: relative;
-}
+    position: static;
+} */
 
-.ParallaxImg {
+.BounceImg {
+    transform: translateY(0.5rem);
+    animation-name: bounceAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
     position: absolute;
+    overflow: hidden;
+    z-index: 1;
 }
