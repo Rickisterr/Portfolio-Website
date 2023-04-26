@@ -1,0 +1,5 @@
+.ContentWrap {
+    background-image: radial-gradient(#6e00ff, #6e00ff75);
+    background-image: -moz-radial-gradient(#6e00ff, #6e00ff75);
+    background-image: -webkit-radial-gradient(#6e00ff, #6e00ff75);
+}

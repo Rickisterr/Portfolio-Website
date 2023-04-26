@@ -46,7 +46,7 @@ function NavBar() {
                 <div className='FixedNav'>
                     <Navbar className='NavBg'>
                         <Navbar.Brand>
-                            <Icons.House style={{ color: '#FFFFFF', fontSize: '1.875rem' }} />
+                            <Icons.House style={{ color: '#FFFFFF', fontSize: '3.75vh' }} />
                         </Navbar.Brand>
                         <Nav style={{ width: '100%', display: 'flex' }}>
 
@@ -63,7 +63,7 @@ function NavBar() {
 
                         </Nav>
 
-                        <button className='GitHubButton'><Icons.Github style={{ width: '1.375rem', height: '1.375rem' }} /></button>
+                        <button className='GitHubButton'><Icons.Github style={{ height: '2vw' }} /></button>
 
                     </Navbar>
                 </div>

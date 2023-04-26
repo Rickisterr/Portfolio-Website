@@ -1,3 +1,4 @@
+/* Bounce Animation */
 @keyframes bounceAnim {
     0% {
         transform: translateY(0.5rem);
@@ -10,16 +11,21 @@
     }
 }
 
-.HomeWrapper {
+/* Main Wrapper */
+.Wrapper {
     overflow-x: hidden;
 }
 
-/* .ParallaxSection {
-    overflow: hidden;
-    width: 100%;
-    position: static;
-} */
+/* Column Flex */
+.ColFlexWrap {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+/* Bounce Animation for Images */
 .BounceImg {
     transform: translateY(0.5rem);
     animation-name: bounceAnim;
