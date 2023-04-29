@@ -1,5 +1,8 @@
 .ContentWrap {
-    background-image: radial-gradient(#6e00ff, #6e00ff75);
-    background-image: -moz-radial-gradient(#6e00ff, #6e00ff75);
-    background-image: -webkit-radial-gradient(#6e00ff, #6e00ff75);
+    background-image: linear-gradient(to top, #9948d9, #3c006b);
+    background-image: -moz-linear-gradient(to top, #9948d9, #3c006b);
+    background-image: -webkit-linear-gradient(to top, #9948d9, #3c006b);
+    border-style: solid;
+    border-width: 0.25vw;
+    border-color: #0e0057
 }
