@@ -1,7 +1,7 @@
 function Laptop(props) {
     return (
         <div style={{ transform: props.scale }}>
-            <svg width="209.24mm" height="148.51mm" version="1.1" viewBox="0 0 209.24 148.51" xmlns="http://www.w3.org/2000/svg">
+            <svg version="1.1" viewBox="0 0 209.24 148.51" xmlns="http://www.w3.org/2000/svg">
                 <g transform="translate(-.36276 -58.714)">
                     <g transform="matrix(1.5976 0 0 1.543 -57.301 -73.884)">
                         <rect x="38.156" y="85.938" width="124.78" height="85.938" rx="4.125" ry="3.7812" fill="#808080" stroke-width=".26458" />

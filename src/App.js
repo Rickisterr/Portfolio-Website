@@ -6,11 +6,13 @@ import About from './Components/About/About';
 import Projects from './Components/Projects/Projects';
 import Blog from './Components/Blog/Blog';
 import Resume from './Components/Resume/Resume';
+import ParticleEff from './ParticlesEffect';
 
 function App() {
   return (
     <Router>
       <NavBar />
+      <ParticleEff />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />

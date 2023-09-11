@@ -48,28 +48,30 @@
         top: 0;
         border: none;
         text-align: center;
+        transition-property: color;
+        transition-duration: 0.5s;
     }
 
     .NavButton:hover {
         cursor: pointer;
-        color: #bdbdbd;
+        color: #808080;
     }
 
-    .NavButton:focus {
-        color: coral;
+    .NavButton:active {
+        color: #0051ff;
     }
 
     .GitHubButton {
         float: right;
         width: 5.5vw;
-        height: 2.25vw;
+        height: 4.25vh;
         margin-right: 0;
         border-width: 0.15vw;
         border-color: #ffffff;
         border-radius: 0.35vw;
         background-color: #4d00c1ec;
         color: #d6d6d6;
-        padding-top: 0.15%;
+        padding-top: 0.05%;
         font-size: 2.5vh;
         text-align: center;
     }

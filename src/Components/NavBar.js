@@ -63,7 +63,7 @@ function NavBar() {
 
                         </Nav>
 
-                        <button className='GitHubButton'><Icons.Github style={{ height: '2vw' }} /></button>
+                        <button className='GitHubButton'><Icons.Github style={{ height: '4vh' }} /></button>
 
                     </Navbar>
                 </div>
