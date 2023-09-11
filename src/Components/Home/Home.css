@@ -51,6 +51,10 @@
         align-items: center;
     }
 
+    .LeftToCenter {
+        text-align: center;
+    }
+
     #LaptopPic {
         width: 75vw;
     }

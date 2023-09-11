@@ -1,5 +1,6 @@
 import './Home.css';
 import { useEffect, useState } from 'react';
+import Contact from '../Contact';
 
 // import Earth_horizon_space from '../Resources/Earth_horizon_space.jpg';
 // import STS135_final_flyaround_of_ISS_1 from '../Resources/STS-135_final_flyaround_of_ISS_1 (2).png';
@@ -105,8 +106,8 @@ function Home() {                                           // Home Page class
             <div className='ColFlexWrap'>
                 <div className='ViewportPage RowFlexWrap'>
                     <div>
-                        <h1 className='WhiteNormText'>WELCOME</h1>
-                        <h2 className='WhiteNormText'>MY NAME IS RICHIK SINHA</h2>
+                        <h1 className='WhiteNormText LeftToCenter' style={{ fontSize: '2.5vmax' }}>WELCOME</h1>
+                        <h2 className='WhiteNormText LeftToCenter' style={{ fontSize: '2vmax' }}>MY NAME IS RICHIK SINHA</h2>
                     </div>
                     <div id='LaptopPic'>
                         <Laptop
@@ -127,6 +128,9 @@ function Home() {                                           // Home Page class
                     <div>
                         <img alt="Richik Sinha" src={PFP} loading="lazy" style={{ width: '25vw', minWidth: '25vmax' }} />
                     </div>
+                </div>
+                <div style={{ marginTop: '30vh' }}>
+                    <Contact />
                 </div>
             </div>
         </div>
