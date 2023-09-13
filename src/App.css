@@ -15,32 +15,69 @@ body {
 
 img {
   border-style: solid;
-  border-color: rgb(100, 100, 100);
+  border-color: #f4f1de;
 }
 
 a {
   text-decoration: none;
-  color: aliceblue;
+  color: #f4f1de;
 }
 
-@media only screen and (orientation: landscape) {
+p {
+  color: #f4f1de;
+}
+
+@media screen and (min-width: 1900px) {
   .Paragraphs {
-    font-size: 1.5vw;
+    font-size: 2.25rem;
   }
 
   .Headings {
-    font-size: 3.25vw;
+    font-size: 3.4rem;
     padding-bottom: 0.5vw;
   }
 }
 
-@media only screen and (orientation: portrait) {
+@media screen and (max-width: 1900px) and (min-width: 1023px) {
   .Paragraphs {
-    font-size: 2.75vw;
+    font-size: 1.35rem;
   }
 
   .Headings {
-    font-size: 3vh;
+    font-size: 2.5rem;
+    padding-bottom: 0.5vw;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 767px) {
+  .Paragraphs {
+    font-size: 1.15rem;
+  }
+
+  .Headings {
+    font-size: 2.3rem;
+    padding-bottom: 0.5vw;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 500px) {
+  .Paragraphs {
+    font-size: 1rem;
+  }
+
+  .Headings {
+    font-size: 2.15rem;
+    padding-bottom: 0.5vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Paragraphs {
+    font-size: 0.75rem;
+  }
+
+  .Headings {
+    font-size: 1.90;
     padding-bottom: 0.5vh;
   }
 }

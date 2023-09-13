@@ -39,7 +39,7 @@
 
     .NavButton {
         background-color: #252525;
-        color: #FFFFFF;
+        color: #ffffff;
         font-size: 2.5vh;
         box-sizing: border-box;
         width: 9vw;
@@ -67,7 +67,7 @@
         height: 4.25vh;
         margin-right: 0;
         border-width: 0.15vw;
-        border-color: #ffffff;
+        border-color: #f4f1de;
         border-radius: 0.35vw;
         background-color: #4d00c1ec;
         color: #d6d6d6;
@@ -80,7 +80,7 @@
         cursor: pointer;
         background-color: #340082;
         color: #acacac;
-        border-color: #eaeaea;
+        /* border-color: #eaeaea; */
     }
 }
 
@@ -113,7 +113,7 @@
         width: '3rem';
         height: '1.375rem';
         background-color: #252525;
-        color: #FFFFFF;
+        color: #f4f1de;
         font-size: 1.375rem;
         padding: 0.25vh;
         text-decoration: none;
@@ -136,10 +136,10 @@
         margin: 0;
         text-align: left;
         text-decoration: none;
-        border-left: 0;
+        /* border-left: 0;
         border-right: 0;
         border-top: 1px;
-        border-color: rgb(225, 225, 225);
+        border-color: rgb(225, 225, 225); */
     }
 
     .ExpandButtons:hover {

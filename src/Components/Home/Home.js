@@ -106,8 +106,8 @@ function Home() {                                           // Home Page class
             <div className='ColFlexWrap'>
                 <div className='ViewportPage RowFlexWrap'>
                     <div>
-                        <h1 className='WhiteNormText LeftToCenter' style={{ fontSize: '2.5vmax' }}>WELCOME</h1>
-                        <h2 className='WhiteNormText LeftToCenter' style={{ fontSize: '2vmax' }}>MY NAME IS RICHIK SINHA</h2>
+                        <h1 className='WhiteNormText LeftToCenter' style={{ fontSize: '4.5vmax' }}>WELCOME!<span id='high-five'>  &#128588;</span></h1>
+                        <h2 className='WhiteNormText LeftToCenter' style={{ fontSize: '2.75vmax' }}>MY NAME IS RICHIK SINHA</h2>
                     </div>
                     <div id='LaptopPic'>
                         <Laptop
@@ -117,10 +117,10 @@ function Home() {                                           // Home Page class
                         />
                     </div>
                 </div>
-                <div className='ViewportPage RowFlexWrap' style={{ gap: '5vmin' }}>
+                <div className='ViewportPage RowFlexWrap RowFlexWrapReverse' style={{ gap: '5vmin' }}>
                     <div>
                         <h1 className='WhiteNormText Headings'>About Me</h1>
-                        <p className='WhiteNormText Paragraphs'>
+                        <p className='WhiteNormText Paragraphs' style={{ textAlign: 'justify' }}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet. Consequat interdum varius sit amet. Porta nibh venenatis cras sed felis. Erat velit scelerisque in dictum non. Posuere morbi leo urna molestie at elementum eu. Faucibus et molestie ac feugiat. Velit dignissim sodales ut eu sem. Sed ullamcorper morbi tincidunt ornare. Bibendum neque egestas congue quisque egestas diam in. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Elementum facilisis leo vel fringilla est.
                             Pretium viverra suspendisse potenti nullam. Lectus quam id leo in vitae. Risus nullam eget felis eget. Feugiat scelerisque varius morbi enim nunc faucibus a. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. In egestas erat imperdiet sed euismod. Pharetra massa massa ultricies mi quis hendrerit. Blandit libero volutpat sed cras. At elementum eu facilisis sed odio morbi. Leo duis ut diam quam nulla.
                         </p>

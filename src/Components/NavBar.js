@@ -7,16 +7,22 @@ import Button from 'react-bootstrap/Button';
 import './NavBar.css';
 
 function NavBar() {
-
+    // function to open and close menu via hamburger button in portrait mode
     const hamburgerMenuToggle = () => {
         if(document.getElementById('my-toggle-links').className == 'openHamburger') {
             document.getElementById('my-toggle-links').className = 'closeHamburger';
-            setTimeout(() => {document.getElementsByClassName('HamburgerMenu')[0].style.display = 'none';}, 300);
+            setTimeout(() => {document.getElementsByClassName('HamburgerMenu')[0].style.display = 'none';}, 300);   // makes hamburger menu disappear
         }
         else {
             document.getElementById('my-toggle-links').className = 'openHamburger';
-            setTimeout(() => {document.getElementsByClassName('HamburgerMenu')[0].style.display = 'block';}, 300);
+            setTimeout(() => {document.getElementsByClassName('HamburgerMenu')[0].style.display = 'block';}, 300);  // makes hamburger menu collapse open
         }
+    };
+
+    // function to scroll to top of website
+    // used with buttons on click function
+    const toTop = () => {
+        window.scrollTo(0, 0);
     };
 
     return (
@@ -45,20 +51,20 @@ function NavBar() {
                 </div>
                 <div className='FixedNav'>
                     <Navbar className='NavBg'>
-                        <Navbar.Brand>
+                        <Navbar.Brand as={Link} to='/'>
                             <Icons.House style={{ color: '#FFFFFF', fontSize: '3.75vh' }} />
                         </Navbar.Brand>
                         <Nav style={{ width: '100%', display: 'flex' }}>
 
-                            <Nav.Link as={Link} to='/' className='NavButton' style={{ marginLeft: '4vw' }}>Home</Nav.Link>
+                            <Nav.Link as={Link} to='/' className='NavButton' style={{ marginLeft: '3vw' }} onClick={toTop}>Home</Nav.Link>
 
-                            <Nav.Link as={Link} to='/about' className='NavButton'>About</Nav.Link>
+                            <Nav.Link as={Link} to='/about' className='NavButton' onClick={toTop}>About</Nav.Link>
 
-                            <Nav.Link as={Link} to='/projects' className='NavButton'>Projects</Nav.Link>
+                            <Nav.Link as={Link} to='/projects' className='NavButton' onClick={toTop}>Projects</Nav.Link>
 
-                            <Nav.Link as={Link} to='/blog' className='NavButton'>Blog</Nav.Link>
+                            <Nav.Link as={Link} to='/blog' className='NavButton' onClick={toTop}>Blog</Nav.Link>
 
-                            <Nav.Link as={Link} to='/resume' className='NavButton'>Resume</Nav.Link>
+                            <Nav.Link as={Link} to='/resume' className='NavButton' onClick={toTop}>Resume</Nav.Link>
 
 
                         </Nav>
