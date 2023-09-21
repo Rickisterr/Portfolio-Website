@@ -9,20 +9,23 @@ import './NavBar.css';
 function NavBar() {
     // function to open and close menu via hamburger button in portrait mode
     const hamburgerMenuToggle = () => {
-        if(document.getElementById('my-toggle-links').className == 'openHamburger') {
+        if (document.getElementById('my-toggle-links').className == 'openHamburger') {
             document.getElementById('my-toggle-links').className = 'closeHamburger';
-            setTimeout(() => {document.getElementsByClassName('HamburgerMenu')[0].style.display = 'none';}, 300);   // makes hamburger menu disappear
+            setTimeout(() => { document.getElementsByClassName('HamburgerMenu')[0].style.display = 'none'; }, 300);   // makes hamburger menu disappear
         }
         else {
             document.getElementById('my-toggle-links').className = 'openHamburger';
-            setTimeout(() => {document.getElementsByClassName('HamburgerMenu')[0].style.display = 'block';}, 300);  // makes hamburger menu collapse open
+            setTimeout(() => { document.getElementsByClassName('HamburgerMenu')[0].style.display = 'block'; }, 300);  // makes hamburger menu collapse open
         }
     };
 
     // function to scroll to top of website
     // used with buttons on click function
     const toTop = () => {
-        window.scrollTo(0, 0);
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     };
 
     return (
@@ -36,15 +39,15 @@ function NavBar() {
 
                     <div className='HamburgerMenu' style={{ display: 'none' }}>
                         <div id="my-toggle-links" className='initHamburger' style={{ display: 'flex', flexDirection: 'column', msflexDirection: 'column', WebkitflexDirection: 'column', width: 'auto', textAlign: 'justify' }}>
-                            <Link as={Link} to='/' className='ExpandButtons'>Home</Link>
+                            <Link to='/' className='ExpandButtons'>Home</Link>
 
-                            <Link as={Link} to='/about' className='ExpandButtons'>About</Link>
+                            <Link to='/about' className='ExpandButtons'>About</Link>
 
-                            <Link as={Link} to='/projects' className='ExpandButtons'>Projects</Link>
+                            <Link to='/projects' className='ExpandButtons'>Projects</Link>
 
-                            <Link as={Link} to='/blog' className='ExpandButtons'>Blog</Link>
+                            <Link to='/blog' className='ExpandButtons'>Blog</Link>
 
-                            <Link as={Link} to='/resume' className='ExpandButtons'>Resume</Link>
+                            <Link to='/resume' className='ExpandButtons'>Resume</Link>
                         </div>
                     </div>
 
@@ -63,9 +66,6 @@ function NavBar() {
                             <Nav.Link as={Link} to='/projects' className='NavButton' onClick={toTop}>Projects</Nav.Link>
 
                             <Nav.Link as={Link} to='/blog' className='NavButton' onClick={toTop}>Blog</Nav.Link>
-
-                            <Nav.Link as={Link} to='/resume' className='NavButton' onClick={toTop}>Resume</Nav.Link>
-
 
                         </Nav>
 

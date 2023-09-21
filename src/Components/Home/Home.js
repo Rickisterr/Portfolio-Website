@@ -1,12 +1,13 @@
 import './Home.css';
 import { useEffect, useState } from 'react';
 import Contact from '../Contact';
-
-// import Earth_horizon_space from '../Resources/Earth_horizon_space.jpg';
-// import STS135_final_flyaround_of_ISS_1 from '../Resources/STS-135_final_flyaround_of_ISS_1 (2).png';
-// import STS41B_35_1613_Bruce_McCandless_II from '../Resources/STS41B-35-1613_-_Bruce_McCandless_II_astronaut_floating.png';
+import { Link } from 'react-router-dom';
 import Laptop from '../Resources/Laptop';
 import PFP from '../Resources/ProfilePic.jpeg';
+import PicCarousel from '../Resources/PicCarousel';
+import SammardProj from '../Resources/RocketProjectOpen.jpg';
+import PortfolioProj from '../Resources/PortfolioProjectOpen.jpg';
+import TicTacToeProj from '../Resources/TicTacToeProjectOpen.jpg';
 
 
 function Home() {                                           // Home Page class
@@ -16,9 +17,15 @@ function Home() {                                           // Home Page class
     const [typedmsg, setTypedmsg] = useState('');
 
     // Messages set to display
-    const msgs = ["Website Design", "Software Development ", "Data Science ", "Artificial Intelligence "];
+    const msgs = ["Web Design  ", "Software Development  ", "Embedded Systems  ", "Artificial Intelligence  "];
     // message flag to be stored in session storage
     var msgflag = "0"
+
+    // arrays used for cycling through slideshow for Projects slideshow
+    const SlidePics = [ SammardProj, PortfolioProj, TicTacToeProj ];
+    const SlideCapts = [ 'TEAM SAMMARD PROJECTS', 'PORTFOLIO WEBSITE', 'TIC TAC TOE PROJECT' ];
+    const SlideLinks = ['/projects', '/projects#Portfolioid', '/projects#TicTacToeid'];
+
 
     function getMsgflag() {                                 // gets the last update to the message flag before page refresh from session storage
         if (sessionStorage.getItem("msgflag")) {
@@ -55,7 +62,7 @@ function Home() {                                           // Home Page class
     }
 
     function updateMsg(i) {                                 // updates value of typed message so that output can be displayed as such
-        return (setTypedmsg(msgs[msgval].slice(0, i)));
+        return(setTypedmsg(msgs[msgval].slice(0, i)));
     }
 
     function MessageUpdation() {                            // Updates message
@@ -122,16 +129,17 @@ function Home() {                                           // Home Page class
                         <h1 className='WhiteNormText Headings'>About Me</h1>
                         <p className='WhiteNormText Paragraphs' style={{ textAlign: 'justify' }}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet. Consequat interdum varius sit amet. Porta nibh venenatis cras sed felis. Erat velit scelerisque in dictum non. Posuere morbi leo urna molestie at elementum eu. Faucibus et molestie ac feugiat. Velit dignissim sodales ut eu sem. Sed ullamcorper morbi tincidunt ornare. Bibendum neque egestas congue quisque egestas diam in. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Elementum facilisis leo vel fringilla est.
-                            Pretium viverra suspendisse potenti nullam. Lectus quam id leo in vitae. Risus nullam eget felis eget. Feugiat scelerisque varius morbi enim nunc faucibus a. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. In egestas erat imperdiet sed euismod. Pharetra massa massa ultricies mi quis hendrerit. Blandit libero volutpat sed cras. At elementum eu facilisis sed odio morbi. Leo duis ut diam quam nulla.
+                            Pretium viverra suspendisse potenti nullam. Lectus quam id leo in vitae. Risus nullam eget felis eget. Feugiat scelerisque varius morbi enim nunc faucibus a. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. In egestas erat imperdiet sed euismod.
                         </p>
                     </div>
                     <div>
-                        <img alt="Richik Sinha" src={PFP} loading="lazy" style={{ width: '25vw', minWidth: '25vmax' }} />
+                        <Link to='/about'><img alt="Richik Sinha" src={PFP} loading="lazy" className='PicButton' style={{ width: '25vw', minWidth: '25vmax', borderRadius: '1rem' }} /></Link>
                     </div>
                 </div>
-                <div style={{ marginTop: '30vh' }}>
-                    <Contact />
+                <div className='ViewportPage RowFlexWrap RowFlexWrapReverse' style={{ gap: '5vmin' }}>
+                    <PicCarousel link={SlideLinks} Pic={SlidePics} Caption={SlideCapts} iter={3} />
                 </div>
+                <Contact />
             </div>
         </div>
     );

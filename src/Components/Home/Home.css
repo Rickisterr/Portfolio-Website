@@ -67,14 +67,20 @@
     -moz-animation-timing-function: linear;
     -moz-animation-iteration-count: infinite;
     position: absolute;
-    animation-delay: 2s;
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
     transform: translateY(-0.75rem);
 }
 
+.PicButton {
+    scale: 1;
+    transition: scale 0.25s ease-in-out;
+}
+
+.PicButton:hover {
+    scale: 1.05;
+}
+
 /* Landscape oriented screen */
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 769px) {
     .RowFlexWrap {
         display: flex;
         flex-direction: row;
@@ -89,7 +95,7 @@
 }
 
 /* Portrait oriented screen */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
     .RowFlexWrap {
         display: flex;
         flex-direction: column;

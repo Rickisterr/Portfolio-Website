@@ -12,7 +12,7 @@ function Contact() {
     };
 
     return (
-        <div>
+        <div style={{ marginTop: '30vh' }}>
             <div style={{ width: '100vw', backgroundColor: '#36454f', padding: '3vmin', borderTopColor: '#f4f1de', borderTopStyle: 'solid', borderTopWidth: '0.25vmin' }}>
                 <div className="RowFlexWrap" style={{ alignItems: 'flex-start' }}>
 
@@ -42,8 +42,6 @@ function Contact() {
                         <div><Link to="/projects" className="LeftToCenter" onClick={toTop}>Projects</Link></div>
 
                         <div><Link to="/blog" className="LeftToCenter" onClick={toTop}>Blog</Link></div>
-
-                        <div><Link to="/resume" className="LeftToCenter" onClick={toTop}>Resume</Link></div>
 
                     </div>
 

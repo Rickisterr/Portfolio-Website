@@ -1,4 +1,7 @@
+import { useEffect, useState } from "react";
+
 function Laptop(props) {
+
     return (
         <div style={{ transform: props.scale }}>
             <svg version="1.1" viewBox="0 0 209.24 148.51" xmlns="http://www.w3.org/2000/svg">
