@@ -5,9 +5,10 @@ import { Link } from 'react-router-dom';
 import Laptop from '../Resources/Laptop';
 import PFP from '../Resources/ProfilePic.jpeg';
 import PicCarousel from '../Resources/PicCarousel';
+
 import SammardProj from '../Resources/RocketProjectOpen.jpg';
 import PortfolioProj from '../Resources/PortfolioProjectOpen.jpg';
-import TicTacToeProj from '../Resources/TicTacToeProjectOpen.jpg';
+import Game2048 from '../Resources/Game2048Open.jpg';
 
 
 function Home() {                                           // Home Page class
@@ -22,9 +23,9 @@ function Home() {                                           // Home Page class
     var msgflag = "0"
 
     // arrays used for cycling through slideshow for Projects slideshow
-    const SlidePics = [ SammardProj, PortfolioProj, TicTacToeProj ];
-    const SlideCapts = [ 'TEAM SAMMARD PROJECTS', 'PORTFOLIO WEBSITE', 'TIC TAC TOE PROJECT' ];
-    const SlideLinks = ['/projects', '/projects#Portfolioid', '/projects#TicTacToeid'];
+    const SlidePics = [SammardProj, PortfolioProj, Game2048];
+    const SlideCapts = ['TEAM SAMMARD PROJECTS', 'DIABETES PREDICTOR', '2048 GAME'];
+    const SlideLinks = ['/projects#SammardWorksid', '/projects#Diabetes-Model', '/projects#Game-2048'];
 
 
     function getMsgflag() {                                 // gets the last update to the message flag before page refresh from session storage
@@ -62,7 +63,7 @@ function Home() {                                           // Home Page class
     }
 
     function updateMsg(i) {                                 // updates value of typed message so that output can be displayed as such
-        return(setTypedmsg(msgs[msgval].slice(0, i)));
+        return (setTypedmsg(msgs[msgval].slice(0, i)));
     }
 
     function MessageUpdation() {                            // Updates message
@@ -124,20 +125,28 @@ function Home() {                                           // Home Page class
                         />
                     </div>
                 </div>
-                <div className='ViewportPage RowFlexWrap RowFlexWrapReverse' style={{ gap: '5vmin' }}>
-                    <div>
-                        <h1 className='WhiteNormText Headings'>About Me</h1>
-                        <p className='WhiteNormText Paragraphs' style={{ textAlign: 'justify' }}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet. Consequat interdum varius sit amet. Porta nibh venenatis cras sed felis. Erat velit scelerisque in dictum non. Posuere morbi leo urna molestie at elementum eu. Faucibus et molestie ac feugiat. Velit dignissim sodales ut eu sem. Sed ullamcorper morbi tincidunt ornare. Bibendum neque egestas congue quisque egestas diam in. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Elementum facilisis leo vel fringilla est.
-                            Pretium viverra suspendisse potenti nullam. Lectus quam id leo in vitae. Risus nullam eget felis eget. Feugiat scelerisque varius morbi enim nunc faucibus a. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. In egestas erat imperdiet sed euismod.
-                        </p>
-                    </div>
-                    <div>
-                        <Link to='/about'><img alt="Richik Sinha" src={PFP} loading="lazy" className='PicButton' style={{ width: '25vw', minWidth: '25vmax', borderRadius: '1rem' }} /></Link>
-                    </div>
+                <div className='ViewportPage RowFlexWrap RowFlexWrapReverse'>
+                    {/* <Link to='/about'> */}
+                        <div className='RowFlexWrap RowFlexWrapReverse' style={{ backgroundColor: '#36454f', gap: '5vmin', paddingBlock: '6vmin', paddingInline: '12vmin', borderStyle: 'solid', borderWidth: '0.25vmin', borderRadius: '1rem', borderColor: '#f4f1de' }}>
+                            <div>
+                                <h1 className='WhiteNormText Headings' style={{ paddingBottom: '1.75vmin' }}>About Me</h1>
+                                <p className='WhiteNormText Paragraphs' style={{ textAlign: 'justify' }}>
+                                My name is Richik Sinha. I am pursuing a Computer Science and Engineering Undergraduate degree at Vellore Institute of Technology, Vellore Campus. 
+                                I am obsessed with learning various concepts of science and technology and applying them to solve real world problems to the best of my abilities. 
+                                I am a quick learner and hard worker, which allows me to push myself harder and harder in my work. 
+                                My subjects of expertise are diverse and ever-increasing. As such, I look forward to working together on projects with those interested in my services and abilities.
+                                </p>
+                            </div>
+                            <div>
+                                <Link to='/about'>
+                                    <img alt="Richik Sinha" src={PFP} loading="lazy" className='PicButton' style={{ width: '25vw', minWidth: '25vmax', borderRadius: '1rem' }} />
+                                </Link>
+                            </div>
+                        </div>
+                    {/* </Link> */}
                 </div>
-                <div className='ViewportPage RowFlexWrap RowFlexWrapReverse' style={{ gap: '5vmin' }}>
-                    <PicCarousel link={SlideLinks} Pic={SlidePics} Caption={SlideCapts} iter={3} />
+                <div className='ViewportPage' style={{ gap: '5vmin', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                    <PicCarousel link={SlideLinks} Pic={SlidePics} Caption={SlideCapts} iter={SlideLinks.length} />
                 </div>
                 <Contact />
             </div>

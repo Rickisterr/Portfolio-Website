@@ -1,0 +1,19 @@
+@media screen and (min-width: 950px) {
+    .BoxWrap {
+        display: flex;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .BoxWrap {
+        display: flex;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

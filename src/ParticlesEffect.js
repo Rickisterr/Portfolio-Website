@@ -58,7 +58,7 @@ function ParticleEff() {
                     },
                     "modes": {
                         "push": {
-                            "particles_nb": 1
+                            "particles_nb": 6
                         }
                     }
                 },

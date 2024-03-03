@@ -49,9 +49,9 @@ function Contact() {
 
                         <div><h2 style={{ paddingBottom: '1vmin' }}>Contact Info</h2></div>
 
-                        <div><a href="https://www.linkedin.com/in/richik-sinha/" target="_blank">LinkedIn</a></div>
+                        <div><a href="https://www.linkedin.com/in/richik-sinha/" target="_blank" rel="noreferrer">LinkedIn</a></div>
 
-                        <div><a href="mailto:richik.main@gmail.com" target="_blank">Email</a></div>
+                        <div><a href="mailto:richik.main@gmail.com" target="_blank" rel="noreferrer">Email</a></div>
 
                         <div>
                             <p>
@@ -68,9 +68,9 @@ function Contact() {
 
                         <div><h2 style={{ paddingBottom: '1vmin' }}>Social Media</h2></div>
 
-                        <div><a href="https://github.com/Rickisterr" target="_blank">Github</a></div>
+                        <div><a href="https://github.com/Rickisterr" target="_blank" rel="noreferrer">Github</a></div>
 
-                        <div><a href="https://www.instagram.com/richirs_/" target="_blank">Instagram</a></div>
+                        <div><a href="https://www.instagram.com/richirs_/" target="_blank" rel="noreferrer">Instagram</a></div>
 
                     </div>
 

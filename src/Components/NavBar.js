@@ -45,9 +45,8 @@ function NavBar() {
 
                             <Link to='/projects' className='ExpandButtons'>Projects</Link>
 
-                            <Link to='/blog' className='ExpandButtons'>Blog</Link>
+                            <Link to='/gallery' className='ExpandButtons'>Gallery</Link>
 
-                            <Link to='/resume' className='ExpandButtons'>Resume</Link>
                         </div>
                     </div>
 
@@ -65,15 +64,15 @@ function NavBar() {
 
                             <Nav.Link as={Link} to='/projects' className='NavButton' onClick={toTop}>Projects</Nav.Link>
 
-                            <Nav.Link as={Link} to='/blog' className='NavButton' onClick={toTop}>Blog</Nav.Link>
+                            <Nav.Link as={Link} to='/gallery' className='NavButton' onClick={toTop}>Gallery</Nav.Link>
 
                         </Nav>
 
                         <button className='GitHubButton'><Icons.Github style={{ height: '4vh' }} /></button>
 
                     </Navbar>
+                    <div style={{ width: '100vw', height: '0.0625rem', backgroundColor: '#FFFFFF' }}></div>
                 </div>
-                <div style={{ width: '100vw', height: '0.0625rem', backgroundColor: '#FFFFFF' }}></div>
             </div>
         </>
     );
