@@ -55,10 +55,7 @@ function Contact() {
 
                         <div>
                             <p>
-                                Kolkata - West Bengal,
-                            </p>
-                            <p>
-                                India
+                                Kolkata - WB, India
                             </p>
                         </div>
 

@@ -22,8 +22,8 @@ function PicCarousel(props) {
                 </div>
             </HashLink>
             <div style={{ width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', marginTop: '1rem' }}>
-                <Icons.ChevronCompactLeft className='PointeronHover' onClick={CycleLeft} style={{ color: '#f4f1de', fontSize: '2rem' }} />
-                <Icons.ChevronCompactRight className='PointeronHover' onClick={CycleRight} style={{ color: '#f4f1de', fontSize: '2rem' }} />
+                <Icons.ChevronLeft className='PointeronHover' onClick={CycleLeft} style={{ color: '#f4f1de', fontSize: '2rem' }} />
+                <Icons.ChevronRight className='PointeronHover' onClick={CycleRight} style={{ color: '#f4f1de', fontSize: '2rem' }} />
             </div>
         </div>
     );

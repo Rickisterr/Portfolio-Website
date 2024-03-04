@@ -1,5 +1,4 @@
 import Contact from "../Contact";
-import PFP from '../Resources/ProfilePic.jpeg';
 import './Projects.css';
 
 import SACup_Interview_Pic from '../Resources/ProjectsPage/SACup_Interview.png';
@@ -14,17 +13,17 @@ function Projects() {
     // between picture on the right, explanation on the left and vice versa
 
     return (
-        <div className='Wrapper' style={{ height: 'min-content' }}>
+        <div className='Wrapper' style={{ height: 'min-content', paddingTop: '4.5rem' }}>
             <div>
 
                 {/* Flex wrapping whole viewport to allow each section to flex arrange automatically */}
-                <div className='ColFlexWrap' id="SammardWorksid" style={{ paddingInline: '7vw', paddingBlockStart: '10vh', gap: '10vmin' }}>
+                <div className='ColFlexWrap' id="SammardWorksid" style={{ paddingInline: '7vw', gap: '3rem' }}>
 
 
 
                     {/* Page Title */}
 
-                    <h1 className='Title' style={{ color: '#f0ffff', fontFamily: 'Arial, Helvetica, sans-serif' }}>PROJECTS</h1>
+                    <h1 className='Title' style={{ color: '#f0ffff', marginBlockStart: '1.5rem' }}>PROJECTS</h1>
 
 
 
@@ -34,14 +33,14 @@ function Projects() {
 
                     <div className='BoxWrap' style={{ gap: '5vmin', marginBottom: '4vmin', paddingTop: '0vmin' }}>
                         {/* Textbox for explanation of project 1 */}
-                        <div style={{ width: '60%', backgroundColor: '#36454f', gap: '5vmin', paddingBlock: '5vmin', paddingInline: '9vmin', borderStyle: 'solid', borderWidth: '0.25vmin', borderRadius: '1rem', borderColor: '#f4f1de', minHeight: '50vh' }}>
+                        <div style={{ width: '75%', backgroundColor: '#36454f', gap: '5vmin', paddingBlock: '5vmin', paddingInline: '9vmin', borderStyle: 'solid', borderWidth: '0.25vmin', borderRadius: '1rem', borderColor: '#f4f1de', minHeight: '50vh' }}>
                             <h1 className='WhiteNormText Headings'>Team Sammard Works</h1>
                             <p className='WhiteNormText Paragraphs' style={{ textAlign: 'justify', maxWidth: 'maxContent' }}>
                                 Previously improved and helped develop an in-house flight software system for a
                                 sounding rocket as a part of Team Sammard for the Spaceport America Cup competition
                                 2023. Software was built on an ESP32 Development board manufactured by the team and
                                 programmed in embedded C. Additionally programmed the first deployable version of the team
-                                website for the 2023 team using the ReactJS framework. Physically represented the team 
+                                website for the 2023 team using ReactJS. Physically represented the team 
                                 along with 7 other team members at the competition venue at Las Cruces, New Mexico. 
                             </p>
                         </div>
@@ -49,7 +48,7 @@ function Projects() {
 
                         {/* Image to right of textbox */}
                         <div>
-                            <img alt="Representing Team Sammard in an Interview" src={SACup_Interview_Pic} loading="lazy" style={{ width: '37.5vw', minWidth: '25vmax', borderRadius: '1rem' }} />
+                            <img alt="Representing Team Sammard in an Interview" src={SACup_Interview_Pic} loading="lazy" style={{ width: '35vw', minWidth: '25vmax', borderRadius: '1rem' }} />
                         </div>
                     </div>
 
@@ -69,7 +68,7 @@ function Projects() {
 
 
                         {/* Textbox for explanation of project 2 */}
-                        <div style={{ width: '60%', backgroundColor: '#36454f', gap: '5vmin', paddingBlock: '5vmin', paddingInline: '9vmin', borderStyle: 'solid', borderWidth: '0.25vmin', borderRadius: '1rem', borderColor: '#f4f1de', minHeight: '50vh' }}>
+                        <div style={{ width: '75%', backgroundColor: '#36454f', gap: '5vmin', paddingBlock: '5vmin', paddingInline: '9vmin', borderStyle: 'solid', borderWidth: '0.25vmin', borderRadius: '1rem', borderColor: '#f4f1de', minHeight: '50vh' }}>
                             <h1 className='WhiteNormText Headings'>Diabetes Prediction Model</h1>
                             <p className='WhiteNormText Paragraphs' style={{ textAlign: 'justify', maxWidth: 'maxContent' }}>
                                 Developed a model for prediction of diabetes using a model trained by a public dataset
@@ -90,7 +89,7 @@ function Projects() {
 
                     <div className='BoxWrap' id="Game-2048" style={{ gap: '5vmin', marginBottom: '4vmin', paddingTop: '15vmin' }}>
                         {/* Textbox for explanation of project 3 */}
-                        <div style={{ width: '60%', backgroundColor: '#36454f', gap: '5vmin', paddingBlock: '6vmin', paddingInline: '9vmin', borderStyle: 'solid', borderWidth: '0.25vmin', borderRadius: '1rem', borderColor: '#f4f1de', minHeight: '50vh' }}>
+                        <div style={{ width: '75%', backgroundColor: '#36454f', gap: '5vmin', paddingBlock: '6vmin', paddingInline: '9vmin', borderStyle: 'solid', borderWidth: '0.25vmin', borderRadius: '1rem', borderColor: '#f4f1de', minHeight: '50vh' }}>
                             <h1 className='WhiteNormText Headings'>2048 Game</h1>
                             <p className='WhiteNormText Paragraphs' style={{ textAlign: 'justify', maxWidth: 'maxContent' }}>
                                 Developed a 2048 game in Python. Movement is performed by arrow keys and causes all tiles on the
