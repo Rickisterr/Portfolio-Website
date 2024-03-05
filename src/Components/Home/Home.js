@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Laptop from '../Resources/Laptop';
 import PFP from '../Resources/ProfilePic.jpeg';
 import PicCarousel from '../Resources/PicCarousel';
+import * as Icons from 'react-bootstrap-icons';
 
 import SammardProj from '../Resources/RocketProjectOpen.jpg';
 import PortfolioProj from '../Resources/PortfolioProjectOpen.jpg';
@@ -166,6 +167,12 @@ function Home() {                                           // Home Page class
                                 I am obsessed with learning various concepts of science and technology and applying them to solve real world problems to the best of my abilities.
                                 I am a quick learner and hard worker, which allows me to push myself harder and harder in my work.
                                 My subjects of expertise are diverse and ever-increasing. As such, I look forward to working together on projects with those interested in my services and abilities.
+                                <br /><br />
+                                <p style={{ textAlign: 'right' }}>
+                                    <a href='https://drive.google.com/file/d/1UltqYSplya1GS66czWT9AXssbgGwpvFx/view?usp=sharing' target='_blank' rel='noreferrer'>
+                                        <button className='ResumeButton Paragraphs' style={{ fontSize: '22px' }}>Resume <Icons.Link size={26} style={{ verticalAlign: 'top' }} /></button>
+                                    </a>
+                                </p>
                             </p>
                         </div>
                         <div>
