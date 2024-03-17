@@ -40,8 +40,8 @@
 /* Column Flex */
 .ColFlexWrap {
     display: flex;
-    flex-direction: column;
-    -ms-flex-direction: column;
+    flex-direction: column !important;
+    -ms-flex-direction: column !important;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -96,14 +96,22 @@
     scale: 1.075;
 }
 
+.FlexStart {
+    align-items: flex-start !important;
+}
+
+.FlexEnd {
+    align-items: flex-end !important;
+}
+
 /* Landscape oriented screen */
 @media screen and (min-width: 769px) {
     .RowFlexWrap {
         display: flex;
-        flex-direction: row;
-        -ms-flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
+        flex-direction: row !important;
+        -ms-flex-direction: row !important;
+        justify-content: space-evenly !important;
+        align-items: center !important;
     }
 
     #LaptopPic {
@@ -115,10 +123,10 @@
 @media screen and (max-width: 769px) {
     .RowFlexWrap {
         display: flex;
-        flex-direction: column;
-        -ms-flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        flex-direction: column !important;
+        -ms-flex-direction: column !important;
+        justify-content: space-evenly !important;
+        align-items: center !important;
     }
 
     .RowFlexWrapReverse {
