@@ -4,14 +4,14 @@ function Photo(props) {
 
     return (
         <div style={{ padding: '2vw' }}>
-            <div style={{ minWidth: '25vw', maxWidth: '100%', height: 'auto', textAlign: 'center' }} className='PhotoBox'>
+            <div style={{ minWidth: '25vw', maxWidth: '100%', textAlign: 'center' }} className='PhotoBox'>
                 <img
                     src={props.pic}
                     className='figure-img img-fluid rounded shadow-3 mb-3 Photo'
                     alt='...'
-                    style={{ maxWidth: 'inherit', height: 'auto' }}
+                    style={{ maxWidth: props.wd ? props.wd : 'inherit', height: props.ht ? props.ht : 'auto', objectFit: 'cover' }}
                 />
-                <h3 style={{ maxWidth: 'inherit', height: 'auto' }} className='caption'>{props.caption}</h3>
+                <h3 style={{ maxWidth: props.wd ? props.wd : 'inherit', height: 'auto' }} className='caption'>{props.caption}</h3>
             </div>
         </div>
 

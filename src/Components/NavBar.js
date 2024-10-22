@@ -11,7 +11,7 @@ function NavBar() {
     // function to open and close menu via hamburger button in portrait mode
     const hamburgerMenuToggle = () => {
 
-        if (document.getElementById('my-toggle-links').className == 'openHamburger') {
+        if (document.getElementById('my-toggle-links').className === 'openHamburger') {
             document.getElementById('my-toggle-links').className = 'closeHamburger';
             setTimeout(() => { document.getElementsByClassName('HamburgerMenu')[0].style.display = 'none'; }, 300);   // makes hamburger menu disappear
 

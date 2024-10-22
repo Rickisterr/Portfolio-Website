@@ -17,16 +17,21 @@ function Gallery() {
 
                 <div className="RowFlexWrap">
 
-                    <Photo pic={ExplainingFSW_SACup} caption={<>Explaining Vajra rocket's flight<br />software to fellow rocketeers</>} />
+                    <Photo
+                        pic={ExplainingFSW_SACup}
+                        caption={<>Explaining Vajra rocket's flight software to fellow rocketeers</>}
+                        ht='90vh'
+                        wd='25vw'
+                    />
 
                     <div className="ColFlexWrap">
-                        <Photo pic={Test} caption="Testing..." />
-                        <Photo pic={Test} caption="Testing..." />
+                        <Photo pic={Test} caption="Testing..." ht='30.5vh' />
+                        <Photo pic={Test} caption="Testing..." ht='30.5vh' />
                     </div>
 
                     <div className="ColFlexWrap">
-                        <Photo pic={Test} caption="Testing..." />
-                        <Photo pic={Test} caption="Testing..." />
+                        <Photo pic={Test} caption="Testing..." ht='30.5vh' />
+                        <Photo pic={Test} caption="Testing..." ht='30.5vh' />
                     </div>
 
                 </div>

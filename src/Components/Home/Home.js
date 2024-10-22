@@ -64,7 +64,7 @@ function Home() {                                           // Home Page class
 
 
     function incVal() {                                     // increases value of message counter
-        if (msgval == "3") {
+        if (msgval === "3") {
             msgval = "0";
             setMsgflag();
         }
@@ -86,9 +86,9 @@ function Home() {                                           // Home Page class
 
         getMsgflag();
         
-        if (typedmsg.length == 0) {
+        if (typedmsg.length === 0) {
 
-            if (msgflag == "0") {
+            if (msgflag === "0") {
                 updateMsg(1);
             }
 
@@ -98,12 +98,12 @@ function Home() {                                           // Home Page class
             }
             
         }
-        else if ((typedmsg.length == msgs[msgval].length) && (msgflag != "6")) {
+        else if ((typedmsg.length === msgs[msgval].length) && (msgflag !== "6")) {
             msgflag = String(parseInt(msgflag) + 1);
             setMsgflag();
             // console.log("Set true");
         }
-        else if ((typedmsg.length == msgs[msgval].length) && (msgflag == "6")) {
+        else if ((typedmsg.length === msgs[msgval].length) && (msgflag === "6")) {
             msgflag = "7";
             setMsgflag();
             // console.log("Setting delete");
@@ -111,7 +111,7 @@ function Home() {                                           // Home Page class
             // console.log("equals deleted");
         }
         else {
-            if (msgflag == "7") {
+            if (msgflag === "7") {
                 updateMsg(typedmsg.length - 1);
                 // console.log("deleted");
             }
