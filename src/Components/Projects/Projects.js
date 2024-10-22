@@ -62,7 +62,7 @@ function Projects() {
                         {/* Image to left of textbox */}
                         <div>
                             <a href="https://github.com/smartinternz02/SI-GuidedProject-589113-1697035124">
-                                <img alt="Picture of the Diabetes Prediction Website" src={DiabetesPrediction_Pic} loading="lazy" style={{ width: '25vw', minWidth: '25vmax', borderRadius: '1rem' }} />
+                                <img alt="Diabetes Prediction Website" src={DiabetesPrediction_Pic} loading="lazy" style={{ width: '25vw', minWidth: '25vmax', borderRadius: '1rem' }} />
                             </a>
                         </div>
 
