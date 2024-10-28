@@ -64,7 +64,7 @@ function Home() {                                           // Home Page class
 
 
     function incVal() {                                     // increases value of message counter
-        if (msgval === "3") {
+        if (String(msgval) === String(msgs.length - 1)) {
             msgval = "0";
             setMsgflag();
         }
