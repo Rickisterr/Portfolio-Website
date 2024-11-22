@@ -169,7 +169,7 @@ function Home() {                                           // Home Page class
                                 My subjects of expertise are diverse and ever-increasing. As such, I look forward to working together on projects with those interested in my services and abilities.
                                 <br /><br />
                                 <p style={{ textAlign: 'right' }}>
-                                    <a href='https://drive.google.com/file/d/1UltqYSplya1GS66czWT9AXssbgGwpvFx/view?usp=sharing' target='_blank' rel='noreferrer'>
+                                    <a href='https://drive.google.com/file/d/1VlUQr7RP6zPFB56m7K44iotEYwrreejq/view?usp=sharing' target='_blank' rel='noreferrer'>
                                         <button className='ResumeButton Paragraphs' style={{ fontSize: '22px' }}>Resume <Icons.Link size={26} style={{ verticalAlign: 'top' }} /></button>
                                     </a>
                                 </p>
