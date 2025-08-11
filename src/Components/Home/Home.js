@@ -8,8 +8,9 @@ import PicCarousel from '../Resources/PicCarousel';
 import * as Icons from 'react-bootstrap-icons';
 
 import SammardProj from '../Resources/RocketProjectOpen.jpg';
-import PortfolioProj from '../Resources/PortfolioProjectOpen.jpg';
+import DiabetesProj from '../Resources/PortfolioProjectOpen.jpg';
 import Game2048 from '../Resources/Game2048Open.jpg';
+import GravSim from '../Resources/Chiro_Grav_Sim_1.jpg';
 
 
 function Home() {                                           // Home Page class
@@ -27,10 +28,9 @@ function Home() {                                           // Home Page class
     var msgflag = "0"
 
     // arrays used for cycling through slideshow for Projects slideshow
-    const SlidePics = [SammardProj, PortfolioProj, Game2048];
-    const SlideCapts = ['TEAM SAMMARD PROJECTS', 'DIABETES PREDICTOR', '2048 GAME'];
-    const SlideLinks = ['/projects#SammardWorksid', '/projects#Diabetes-Model', '/projects#Game-2048'];
-
+    const SlidePics = [SammardProj, GravSim, DiabetesProj, Game2048];
+    const SlideCapts = ['TEAM SAMMARD PROJECTS', 'CHIRO GRAVITY SIMULATOR', 'DIABETES PREDICTOR', '2048 GAME'];
+    const SlideLinks = ['/projects#SammardWorksid', '/projects#Gravity-Sim', '/projects#Diabetes-Model', '/projects#Game-2048'];
 
     function getMsgflag() {                                 // gets the last update to the message flag before page refresh from session storage
         

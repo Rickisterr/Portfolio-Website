@@ -2,6 +2,7 @@ import Contact from "../Contact";
 import './Projects.css';
 
 import SACup_Interview_Pic from '../Resources/ProjectsPage/SACup_Interview.png';
+import Chiro_Grav_Example_Pic from '../Resources/ProjectsPage/Chiro_Grav_Sim_Example.jpg';
 import DiabetesPrediction_Pic from '../Resources/ProjectsPage/DiabetesPrediction_Pic.png';
 import Game2048_Pic from '../Resources/ProjectsPage/2048_Game_Pic.png';
 
@@ -58,15 +59,37 @@ function Projects() {
 
 
 
-                    <div className='BoxWrap' id="Diabetes-Model" style={{ gap: '5vmin', marginBottom: '4vmin', paddingTop: '15vmin' }}>
+                    <div className='BoxWrap' id="Gravity-Sim" style={{ gap: '5vmin', marginBottom: '4vmin', paddingTop: '15vmin' }}>
                         {/* Image to left of textbox */}
                         <div>
-                            <a href="https://github.com/smartinternz02/SI-GuidedProject-589113-1697035124">
-                                <img alt="Diabetes Prediction Website" src={DiabetesPrediction_Pic} loading="lazy" style={{ width: '25vw', minWidth: '25vmax', borderRadius: '1rem' }} />
+                            <a href="https://github.com/Rickisterr/Chiro-Gravity-Simulator">
+                                <img alt="Basic Gravity Simulator" src={Chiro_Grav_Example_Pic} loading="lazy" style={{ width: '30vw', minWidth: '25vmax', borderRadius: '1rem' }} />
                             </a>
                         </div>
 
 
+                        {/* Textbox for explanation of project 2 */}
+                        <div style={{ width: '75%', backgroundColor: '#36454f', gap: '5vmin', paddingBlock: '5vmin', paddingInline: '9vmin', borderStyle: 'solid', borderWidth: '0.25vmin', borderRadius: '1rem', borderColor: '#f4f1de', minHeight: '50vh' }}>
+                            <h1 className='WhiteNormText Headings'>Chiro Gravity Simulator</h1>
+                            <p className='WhiteNormText Paragraphs' style={{ textAlign: 'justify', maxWidth: 'maxContent' }}>
+                                Developed a basic 3 dimensional gravity simulator in base OpenGL using C++. The gravity
+                                simulator uses Newtonian gravity on the spacetime fabric rather than Relativistic gravity.
+                                This was simply a design choice done to visualize what would happen in such a scenario as
+                                most gravity simulators use Relativistic instead (which is the only one applicable when
+                                space is visualized as a fabric). This project was very helpful in learning how to use and 
+                                implement OpenGL and perform graphics programming on a more barebones level to understand
+                                its most important concepts.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    {/* Project 3 */}
+
+
+
+                    <div className='BoxWrap' id="Diabetes-Model" style={{ gap: '5vmin', marginBottom: '4vmin', paddingTop: '15vmin' }}>
                         {/* Textbox for explanation of project 2 */}
                         <div style={{ width: '75%', backgroundColor: '#36454f', gap: '5vmin', paddingBlock: '5vmin', paddingInline: '9vmin', borderStyle: 'solid', borderWidth: '0.25vmin', borderRadius: '1rem', borderColor: '#f4f1de', minHeight: '50vh' }}>
                             <h1 className='WhiteNormText Headings'>Diabetes Prediction Model</h1>
@@ -79,15 +102,31 @@ function Projects() {
                                 clicking the adjacent image.
                             </p>
                         </div>
+                        
+                        
+                        {/* Image to left of textbox */}
+                        <div>
+                            <a href="https://github.com/smartinternz02/SI-GuidedProject-589113-1697035124">
+                                <img alt="Diabetes Prediction Website" src={DiabetesPrediction_Pic} loading="lazy" style={{ width: '25vw', minWidth: '25vmax', borderRadius: '1rem' }} />
+                            </a>
+                        </div>
                     </div>
 
 
 
-                    {/* Project 3 */}
+                    {/* Project 4 */}
 
 
 
                     <div className='BoxWrap' id="Game-2048" style={{ gap: '5vmin', marginBottom: '4vmin', paddingTop: '15vmin' }}>
+                        {/* Image to right of textbox */}
+                        <div>
+                            <a href="https://github.com/Rickisterr/2048-Game">
+                                <img alt="Sample working output of 2048 Game" src={Game2048_Pic} loading="lazy" style={{ width: '25vw', minWidth: '25vmax', borderRadius: '1rem' }} />
+                            </a>
+                        </div>
+
+
                         {/* Textbox for explanation of project 3 */}
                         <div style={{ width: '75%', backgroundColor: '#36454f', gap: '5vmin', paddingBlock: '6vmin', paddingInline: '9vmin', borderStyle: 'solid', borderWidth: '0.25vmin', borderRadius: '1rem', borderColor: '#f4f1de', minHeight: '50vh' }}>
                             <h1 className='WhiteNormText Headings'>2048 Game</h1>
@@ -99,14 +138,6 @@ function Projects() {
                                 using a main class GameBoard that simulates the board as a 2-D array and contains all the functions
                                 performable on the game board.
                             </p>
-                        </div>
-
-
-                        {/* Image to right of textbox */}
-                        <div>
-                            <a href="https://github.com/Rickisterr/2048-Game">
-                                <img alt="Sample working output of 2048 Game" src={Game2048_Pic} loading="lazy" style={{ width: '25vw', minWidth: '25vmax', borderRadius: '1rem' }} />
-                            </a>
                         </div>
                     </div>
 
